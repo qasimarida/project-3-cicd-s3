@@ -1,0 +1,22 @@
+version: 0.2
+env:
+  variables:
+    WEBSITE_BUCKET: "project3-website-<yourid>"
+phases:
+  install:
+    commands:
+      - echo "Install phase"
+  pre_build:
+    commands:
+      - echo "Sanity checks"
+      - test -f app/index.html
+  build:
+    commands:
+      - echo "Sync to s3://$WEBSITE_BUCKET"
+      - aws s3 sync app/ s3://$WEBSITE_BUCKET/ --delete
+  post_build:
+    commands:
+      - echo "Build completed at $(date -u)"
+artifacts:
+  files:
+    - app/**/*

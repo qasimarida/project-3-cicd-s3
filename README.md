@@ -1,2 +1,2 @@
-# project-3-cicd-s3
-CI/CD pipeline demo: GitHub → CodePipeline → CodeBuild → S3 static website with SNS notifications
+# Project 3 — CI/CD to S3 (GitHub → CodePipeline → CodeBuild → S3 + SNS)
+Push to `main` ⇒ pipeline runs ⇒ S3 website updates. See /runbooks for ops steps.

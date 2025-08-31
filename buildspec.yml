@@ -19,4 +19,5 @@ phases:
       - echo "Build completed at $(date -u)"
 artifacts:
   files:
-    - app/**/*
+    - '/**/*'
+    base-directory: app

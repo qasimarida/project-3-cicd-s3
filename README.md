@@ -32,4 +32,4 @@ This project demonstrates automation, IaC basics, and DevOps fundamentals for th
   │   └── diagram.png         # architecture diagram
   ├── README.md               # project documentation
   
-      └── budget-alarms.md    # simple budget + alarm notes
+     
